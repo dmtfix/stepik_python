@@ -57,3 +57,31 @@ if diff1 == diff2:
     print("YES")
 else:
     print("NO")
+"""Напишите программу, которая определяет наименьшее из двух чисел."""
+
+num1 = int(input())
+num2 = int(input())
+if num1 < num2:
+    print(num1)
+else:
+    print(num2)
+
+"""Напишите программу, которая определяет наименьшее из четырёх чисел."""
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+
+a, b = 0, 0
+if num1 < num2:
+    a = num1
+else:
+    a = num2
+if num3 < num4:
+    b = num3
+else:
+    b = num4
+if a < b:
+    print(a)
+else:
+    print(b)
