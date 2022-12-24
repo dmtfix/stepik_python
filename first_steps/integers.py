@@ -78,3 +78,15 @@ print((b * 100) + (a * 10) + c)
 print((b * 100) + (c * 10) + a)
 print((c * 100) + (a * 10) + b)
 print((c * 100) + (b * 10) + a)
+
+"""Напишите программу для нахождения цифр четырёхзначного числа."""
+number = int(input())
+unit = number % 10
+ten = ((number % 1000) % 100) // 10
+hundred = (number % 1000) // 100
+thousand = number // 1000
+
+print("Цифра в позиции тысяч равна", thousand)
+print("Цифра в позиции сотен равна", hundred)
+print("Цифра в позиции десятков равна", ten)
+print("Цифра в позиции единиц равна", unit)
