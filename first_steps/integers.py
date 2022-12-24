@@ -51,3 +51,15 @@ print(remainders)
 place = int(input())
 compartment = (place + 3) // 4
 print(compartment)
+
+"""Напишите программу, в которой рассчитывается сумма и произведение
+ цифр положительного трёхзначного числа."""
+
+number = int(input())
+a = number % 10
+b = (number % 100) // 10
+c = number // 100
+summa = a + b + c
+multiplication = a * b * c
+print("Сумма цифр =", summa)
+print("Произведение цифр =", multiplication)
