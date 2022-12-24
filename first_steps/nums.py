@@ -25,3 +25,10 @@ volume = edge * edge * edge  # объём куба (a**3)
 area = 6 * edge * edge  # площадь(6*(a**2))
 print("Объем =", volume)
 print("Площадь полной поверхности =", area)
+
+
+"""Небольшая функция"""
+a = int(input())
+b = int(input())
+function = 3 * ((a + b) ** 3) + 275 * b ** 2 - 127 * a - 41
+print(function)
