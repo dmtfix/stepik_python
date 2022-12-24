@@ -15,4 +15,4 @@ s = str(17)  # Преобразование целого числа к стро�
 first_num = int(input())
 print(first_num)
 print(first_num + 1)
-print(first_num + 2)
+print(first_num + 2)  # print(first_num,first_num + 1, first_num + 2, sep = "\n")
