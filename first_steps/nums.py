@@ -21,7 +21,7 @@ print(first_num + 2)  # print(first_num,first_num + 1, first_num + 2, sep = "\n"
  по введённому значению длины ребра."""
 
 edge = int(input())
-volume = edge * edge * edge  # объём куба (a**3)
+volume = edge * edge * edge  # объём куба (a**3) -- "**" возведение в степень
 area = 6 * edge * edge  # площадь(6*(a**2))
 print("Объем =", volume)
 print("Площадь полной поверхности =", area)
