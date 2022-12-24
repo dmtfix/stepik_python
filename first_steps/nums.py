@@ -16,3 +16,12 @@ first_num = int(input())
 print(first_num)
 print(first_num + 1)
 print(first_num + 2)  # print(first_num,first_num + 1, first_num + 2, sep = "\n")
+
+"""Напишите программу, вычисляющую объём куба и площадь его полной поверхности,
+ по введённому значению длины ребра."""
+
+edge = int(input())
+volume = edge * edge * edge  # объём куба (a**3)
+area = 6 * edge * edge  # площадь(6*(a**2))
+print("Объем =", volume)
+print("Площадь полной поверхности =", area)
