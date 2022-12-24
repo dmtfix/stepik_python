@@ -103,3 +103,24 @@ if 25 <= age <= 59:
     print("зрелость")
 if age >= 60:
     print("старость")
+
+"""Напишите программу, которая считывает три числа и подсчитывает сумму только положительных чисел."""
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+a, b, c = 0, 0, 0
+if num1 > 0:
+    a = num1
+else:
+    a = 0
+if num2 > 0:
+    b = num2
+else:
+    b = 0
+if num3 > 0:
+    c = num3
+else:
+    c = 0
+print(a + b + c)
