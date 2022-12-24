@@ -18,3 +18,20 @@ if num % 2 == 0:
     print("Четное")
 else:
     print("Нечетное")
+
+"""Напишите программу, которая проверяет, что для заданного четырехзначного числа выполняется
+ следующее соотношение: сумма первой и последней цифр равна разности второй и третьей цифр."""
+
+number = int(input())
+unit = number % 10
+ten = ((number % 1000) % 100) // 10
+hundred = (number % 1000) // 100
+thousand = number // 1000
+
+summa = unit + thousand
+difference = hundred - ten
+
+if summa == difference:
+    print("ДА")
+else:
+    print("НЕТ")
