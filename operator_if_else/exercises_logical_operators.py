@@ -85,3 +85,23 @@ elif stolb2 - stolb1 == 1 and (strok1 - strok2 == 2 or strok2 - strok1 == 2):
     print("YES")
 else:
     print("NO")
+
+"""Даны две различные клетки шахматной доски. Напишите программу,  которая определяет,
+ может ли ферзь попасть с первой клетки на вторую одним ходом.
+  Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала
+для первой клетки, потом для второй клетки. Программа должна вывести «YES», если из первой клетки ходом ферзя
+можно попасть во вторую или «NO» в противном случае."""
+
+line1 = int(input())
+column1 = int(input())
+line2 = int(input())
+column2 = int(input())
+
+if line1 == line2 and 1 <= column2 <= 8 or column1 == column2 and 1 <= line2 <= 8:
+    print("YES")
+elif line1 - column1 == line2 - column2:
+    print("YES")
+elif line1 + column1 == line2 + column2:
+    print("YES")
+else:
+    print("NO")
