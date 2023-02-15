@@ -63,3 +63,25 @@ if line1 - 1 <= line2 <= line1 + 1 and column1 - 1 <= column2 <= column1 + 1:
     print("YES")
 else:
     print("NO")
+
+"""Даны две различные клетки шахматной доски. Напишите программу,  которая определяет,
+ может ли конь попасть с первой клетки на вторую одним ходом. 
+ Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для
+  первой клетки, потом для второй клетки. Программа должна вывести «YES», если из первой клетки ходом коня можно 
+  попасть во вторую или «NO» в противном случае."""
+
+stolb1 = int(input())
+strok1 = int(input())
+stolb2 = int(input())
+strok2 = int(input())
+
+if stolb1 - stolb2 == 1 and (strok1 - strok2 == 2 or strok2 - strok1 == 2):
+    print("YES")
+elif stolb1 - stolb2 == 2 and (strok1 - strok2 == 1 or strok2 - strok1 == 1):
+    print("YES")
+elif stolb2 - stolb1 == 2 and (strok1 - strok2 == 1 or strok2 - strok1 == 1):
+    print("YES")
+elif stolb2 - stolb1 == 1 and (strok1 - strok2 == 2 or strok2 - strok1 == 2):
+    print("YES")
+else:
+    print("NO")
